@@ -1,0 +1,236 @@
+<html>
+<head>
+<title>Hostel Management System</title>
+</head>
+<body>
+<style>
+
+   header {
+  background-color: #aec6cf;
+  font-family: 'Bebas Neue';
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+.icon-bar {
+  width: 50%;
+  background-color: #aec6cf;
+  overflow: auto;
+  text-align: center;
+}
+
+.icon-bar a {
+  float: left;
+  width: 16%;
+  padding: 12px 0;
+  border-radius:180px;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 26px;
+}
+
+.icon-bar a:hover {
+  background-color: white;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #aec6cf;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  font-family: Century Gothic;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  font-family: Century Gothic;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px; 
+  font-family: Century Gothic; 
+  border: none;
+  outline: none;
+  color: black;
+  padding: 1px 8px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #aec6cf;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  background-color: #aec6cf;
+  padding: 10px;
+  text-align: left;
+  color: black;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 450px) {
+  .column {
+    width: 80%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 500PX;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+<header>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn"><a href="aboutus.html">About Us</a></button>
+    <div class="dropdown-content">
+      <a href="comittee.html">Commitee</a>
+    </div>
+  </div> 
+	<div class="dropdown">
+    <button class="dropbtn"><a href="login.html">Login</a></button>
+    <div class="dropdown-content">
+      <a href="loginstudent.jsp">Student Login</a>
+	  <a href="loginadmin.jsp">Admin Login</a>
+    </div>
+  </div>
+  </div>
+
+
+<h2>Hostel Management System</h2>
+
+</header>
+
+<h1 style="text-align:center; font-family:Bebas Neue; font-size: 65px">Committee</h1>
+<br>
+<center>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/man-user.png" alt="Presiden" style="width:60%">
+      <div class="container">
+        <h2>Ali Bin Abu</h2>
+        <p class="title">Presiden</p>
+      </div>
+    </div>
+  </div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img/man-user.png" alt="Naib Presiden" style="width:60%">
+      <div class="container">
+        <h2>Mustafa Bin Kamal</h2>
+        <p class="title">Naib Presiden</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="img/woman-user.png" alt="Setiausaha" style="width:60%">
+      <div class="container">
+        <h2>Sarah Binti Raisuddin</h2>
+        <p class="title">Setiausaha</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="img/woman-user.png" alt="Bendahari" style="width:60%">
+      <div class="container">
+        <h2>Nur Farhana Binti Johari</h2>
+        <p class="title">Bendahari</p>
+      </div>
+    </div>
+  </div>
+</div><br>
+</center>
+
+<footer>
+      <div class="container">
+        <h4> Our Address</h4>
+        <h4><ul>Universiti Teknologi Mara Cawangan Perak<br> Kampus Tapah<br>3400 Tapah Road<br>Perak, Malaysia</ul>
+        </h4>
+        <h4> Operating Hours</h4>
+        <h4><ul> Mon - Fri at 10 a.m. to 6 p.m</ul></h4>
+        </div>
+      <div class="icon-bar">
+  <a href="#"><i class="fa fa-envelope"></i></a> 
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-whatsapp"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-instagram"></i></a>
+  <a href="#"><i class="fa fa-youtube"></i></a></div>
+<div>
+<br><center>
+<p>&copy; 2020 UiTM Tapah<p></center></div></footer>
+</body>
+
+</html>
